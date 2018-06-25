@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>汉服</title>
+    <style type="text/css">
+        body {
+            margin: auto;
+            /*background: #f0f0f0;*/
+        }
+        a {
+            text-decoration: none;
+        }
+
+        ul, li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .center_1280 {
+            margin: 0 auto;
+            width: 1280px;
+            position: relative;
+        }
+        .hanfu_body {
+            background: #f0f0f0;
+            /*margin-top: 100px;*/
+            /*margin: 0 auto;
+            width: 1280px;
+            position: relative;*/
+        }
+        .top_banner {
+            background: #d5d5d5;
+            /*background: white;*/
+            width: 100%;
+            height: 474px;
+        }
+        .titleText {
+            color: #595959;
+            font-family: 微软雅黑, serif;
+            font-size: 30px;
+            padding-left: 40px;
+            padding-top: 30px;
+        }
+        .titleText2 {
+            color: #595959;
+            font-family: 微软雅黑, serif;
+            font-size: 30px;
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        .top_bannerImgDiv {
+            margin: 10px;
+            width: 224px;
+            height: 318px;
+            float: left;
+
+        }
+        .shipin_bannerImgDiv {
+            border: solid 1px #666666;
+            margin: 2px;
+            width: 238px;
+            height: 338px;
+            float: left;
+
+        }
+        .bannerImg {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .margin-left-30 {
+            margin-left: 30px;
+        }
+        .banner5Img{
+            height: 338px;
+        }
+        .top_banner:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .small_title {
+            font-size: 14px;
+            font-family: 微软雅黑;
+        }
+        .small_title>ul:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .small_title ul {
+            position: relative;
+            top: -30px;
+            left: 40px;
+        }
+
+        .small_title ul>li {
+            float: left;
+            margin: 6px 210px 6px 6px;
+        }
+
+        .shipin_small_title {
+            font-size: 16px;
+            font-family: 微软雅黑;
+            color: #9d9d9d;
+        }
+        .shipin_small_title>ul:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .shipin_small_title ul {
+            position: relative;
+            top: -20px;
+            left: 30px;
+        }
+
+        .shipin_small_title ul>li {
+            float: left;
+            margin: 6px 206px 6px 6px;
+        }
+
+
+        .split {
+            height: 170px;
+        }
+        .split>select{
+            width: 160px;
+            height: 40px;
+            margin: 90px 0 0 40px;
+            padding-left: 10px;
+            color: #666666;
+            font-size: 22px;
+            border: solid 1px #535353;
+
+            /*很关键：将默认的select选择框样式清除*/
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+
+            /*在选择框的最右侧中间显示小箭头图片*/
+            background: url("img/more_unfold.png") no-repeat scroll right center transparent;
+
+
+            /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+            padding-right: 14px;
+        }
+        .split_info_page {
+            height: 100px;
+
+        }
+        .split_info_page>ul:after{
+            display:block;
+            content:"";
+            clear:both;
+        }
+        .split_info_page>ul {
+            width: 390px;
+            height: 38px;
+            vertical-align: middle;
+            margin: 0 auto;
+            /*padding-left: 300px;*/
+
+        }
+        .split_info_page li{
+            line-height: 34px;
+            float: left;
+        }
+        /*.split_info_page li>a:link {color:#FF0000;}*/
+        .change_page {
+            width: 80px;
+            height: 34px;
+            background: #898889;
+            color: white;
+            text-align: center;
+            /*vertical-align: middle;*/
+            line-height: 34px;
+        }
+        .page_num {
+            padding: 0 3px;
+        }
+        .split_info {
+            width: 1200px;
+            /*height: 800px;*/
+            margin: 0 auto;
+        }
+        .pre_page {
+            padding-right: 60px;
+        }
+        .next_page {
+            padding-left: 60px;
+        }
+        .selected_page{
+            font-weight: bold;
+            color: #333333;
+        }
+        .shipin_banner {
+            height: 600px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body >
+    <div class="hanfu_body center_1280" id="hanfu_body">
+        <div id="top_banner" class="top_banner">
+            <div class="titleText">
+                汉服 HANFU
+            </div>
+            <div id="banner5Img" class="banner5Img margin-left-30">
+                <div class="top_bannerImgDiv">
+                    <!--图片大小比例224x318 !!!-->
+                    <img src="img/hanfu_banner1.jpg" alt="banner1" class="bannerImg" >
+                </div>
+                <div class="top_bannerImgDiv">
+                    <img src="img/hanfu_banner2.jpg" alt="banner2" class="bannerImg" >
+                </div>
+                <div class="top_bannerImgDiv">
+                    <img src="img/hanfu_banner3.jpg" alt="banner3" class="bannerImg" >
+                </div>
+                <div class="top_bannerImgDiv">
+                    <img src="img/hanfu_banner4.jpg" alt="banner4" class="bannerImg" >
+                </div>
+                <div class="top_bannerImgDiv">
+                    <img src="img/hanfu_banner5.jpg" alt="banner5" class="bannerImg" >
+                </div>
+            </div>
+            <br>
+            <div class="small_title">
+                <ul>
+                    <li><a href="">曲裾</a></li>
+                    <li><a href="">褙子</a></li>
+                    <li><a href="">襦裙</a></li>
+                    <li><a href="">直裾</a></li>
+                    <li><a href="">高腰襦裙</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="split">
+            <select name="" id="">
+                <option value="">分类</option>
+                <option value="">曲裾</option>
+                <option value="">褙子</option>
+                <option value="">襦裙</option>
+                <option value="">直裾</option>
+                <option value="">高腰襦裙</option>
+            </select>
+        </div>
+        <div class="split_info">
+            <div class="split_info_img">
+
+            </div>
+            <div class="split_info_page">
+                <ul>
+                    <li class="pre_page">
+                        <a href="">
+                            <div class="change_page">
+                                上一页
+                            </div>
+                        </a>
+                    </li>
+                    <li class="page_num"><a href="">1</a></li>
+                    <li class="page_num"><a href="">2</a></li>
+                    <li class="page_num"><a href="">3</a></li>
+                    <li class="page_num selected_page"><a href="">4</a></li>
+                    <li class="page_num"><a href="">5</a></li>
+                    <li class="page_num"><a href="">6</a></li>
+                    <li class="page_num"><a href="">7</a></li>
+                    <li class="next_page">
+                        <a href="">
+                            <div class="change_page">
+                                下一页
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="shipin_banner">
+            <div class="titleText2">
+                配饰 <span style="color: #d7d4d7;">ACCESSORIES</span>
+            </div>
+            <div id="banner5Img2" class="banner5Img margin-left-30">
+                <div class="shipin_bannerImgDiv">
+                    <!--图片大小比例224x318 !!!-->
+                    <img src="img/shipin_banner1.jpg" alt="banner1" class="bannerImg" >
+                </div>
+                <div class="shipin_bannerImgDiv">
+                    <img src="img/shipin_banner2.jpg" alt="banner2" class="bannerImg" >
+                </div>
+                <div class="shipin_bannerImgDiv">
+                    <img src="img/shipin_banner3.jpg" alt="banner3" class="bannerImg" >
+                </div>
+                <div class="shipin_bannerImgDiv">
+                    <img src="img/shipin_banner4.jpg" alt="banner4" class="bannerImg" >
+                </div>
+                <div class="shipin_bannerImgDiv">
+                    <img src="img/shipin_banner5.jpg" alt="banner5" class="bannerImg" >
+                </div>
+            </div>
+            <br>
+            <div class="shipin_small_title">
+                <ul>
+                    <li><a href="">荷包</a></li>
+                    <li><a href="">宫绦</a></li>
+                    <li><a href="">璎珞</a></li>
+                    <li><a href="">发簪</a></li>
+                    <li><a href="">玉扣</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
