@@ -1,9 +1,11 @@
 .page{
+    /*position: relative;*/
     background-color: #fcfcfc;
     width: 1280px;
     margin:0 auto;
 }
 .public_header{
+    /*position: relative;*/
     width:1280px;
     height: 170px;
 
@@ -62,6 +64,7 @@
 
 /*β����ʽ*/
 .public_footer{
+    /*position: relative;*/
     width:1280px;
     padding-bottom: 50px;
     /*text-align: center;*/
