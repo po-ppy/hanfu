@@ -138,8 +138,8 @@ body{
 .top_and_back{
     position: absolute;
     /*position: relative;*/
-    top:1040px;
-    right:134px;
+    /*top:1040px;*/
+    /*right:134px;*/
 }
 .goods_details {
     text-align: center;
@@ -150,4 +150,10 @@ body{
 .detail_img_describe {
     font-size: 24px;
     font-family: 黑体,Serif;
+}
+.detail_top {
+    margin-top: 10px;
+}
+.detail_back {
+    margin-bottom: 10px;
 }

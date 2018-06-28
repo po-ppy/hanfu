@@ -12,6 +12,7 @@
             /*!*top: 820px;*!*/
         /*}*/
     </style>
+    <script src="../js/jquery-1.11.3.js"></script>
 </head>
 <body>
 
@@ -71,14 +72,14 @@
         </div>
 
         <!-- 返回和返回顶部按钮-->
-        <div class="top_and_back">
+<!--        <div class="top_and_back" id="top_and_back">
             <div class="detail_back">
                 <img src="../img/detail_back.png">
             </div>
             <div class="detail_top">
                 <img src="../img/detail_top.png">
             </div>
-        </div>
+        </div>-->
         <!-- 商品展示-->
         <div class="goods_show">
            <p class="show_text">商品展示</p>
@@ -146,6 +147,15 @@
             </div>
 
         </div>
+        <!-- 返回和返回顶部按钮-->
+        <div class="top_and_back" id="top_and_back">
+            <div class="detail_back">
+                <img src="../img/detail_back.png">
+            </div>
+            <div class="detail_top">
+                <img src="../img/detail_top.png">
+            </div>
+        </div>
         <!-- 尾部-->
         <div class="public_footer" align="center">
             <div class="split_line"></div>
@@ -171,4 +181,37 @@
 
 </div>
 </body>
+<script>
+    window.onscroll = window.onresize = window.onload = function () {
+        var getDiv = document.getElementById("top_and_back");
+
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+        // getDiv.style.left= document.documentElement.clientWidth - getDiv.offsetWidth+'px';
+        getDiv.style.left= document.body.offsetWidth + document.body.scrollLeft+'px';
+        // if(parseInt(getDiv.style.left) > 1900){
+        //     getDiv.style.left = '1700px';
+        // }
+        // getDiv.style.left= 1200+'px';
+        // console.log(document.documentElement.clientWidth);
+        getDiv.style.top = document.documentElement.clientHeight-getDiv.offsetHeight +scrollTop -100 +'px';
+        // alert(parseInt(getDiv.style.top));
+        // alert(document.documentElement.clientWidth);
+        if(parseInt(getDiv.style.top) < 1500){
+            getDiv.style.display = "none";
+            // console.log(">1500 " + parseInt(getDiv.style.top));
+        }else{
+            getDiv.style.display = "block";
+            // console.log("<1500 " + parseInt(getDiv.style.top));
+        }
+
+    };
+    $(".detail_back").click(function () {
+        // alert("back");
+        window.history.back(-1);
+    });
+    $(".detail_top").click(function () {
+        $("html,body").animate({scrollTop:0},700);
+    });
+</script>
 </html>

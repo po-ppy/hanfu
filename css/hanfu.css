@@ -128,6 +128,7 @@ ul, li {
     padding-left: 10px;
     color: #666666;
     font-size: 22px;
+    outline: none;
     border: solid 1px #535353;
 
     /*很关键：将默认的select选择框样式清除*/
@@ -141,6 +142,9 @@ ul, li {
 
     /*为下拉小箭头留出一点位置，避免被文字覆盖*/
     padding-right: 14px;
+}
+.split>select:hover {
+    /*border: ;*/
 }
 .split_info_page {
     margin-top: 30px;
@@ -173,6 +177,9 @@ ul, li {
     text-align: center;
     /*vertical-align: middle;*/
     line-height: 34px;
+}
+.change_page:hover {
+    outline: 1px solid #1a1a1a;
 }
 .page_num {
     padding: 0 3px;
@@ -210,6 +217,8 @@ ul, li {
     margin: 2px;
     float: left;
     background: deepskyblue;
+    overflow: hidden;
+    position: relative;
 }
 .info_img_small {
     width: 236px;
@@ -217,6 +226,22 @@ ul, li {
     margin: 2px;
     float: left;
     background: deepskyblue;
+
+    overflow: hidden;
+}
+.info_img_big>img {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.info_img_big:hover img {
+    transform: scale(1.1);
+}
+.info_img_small>img {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.info_img_small>img:hover {
+    transform: scale(1.1);
 }
 .split_info_img_1:after{
     display:block;
@@ -225,6 +250,36 @@ ul, li {
 }
 .right {
     float: right;
+}
+.info_img_big .text_dec {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*color: #1a1a1a;*/
+    color: transparent;
+    font-size: 60px;
+    font-family: 微软雅黑, serif;
+    overflow: hidden;
+    transition: all 0.5s;
+    text-align: center;
+    line-height: 676px;
+    /*padding: 210px 150px;*/
+}
+.info_img_big:hover .text_dec {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #1a1a1a;
+    text-align: center;
+    line-height: 676px;
+    /*border: 10px solid #1a1a1a;*/
+    /*padding: 210px 150px;*/
+
 }
 
 /*deatails*/
