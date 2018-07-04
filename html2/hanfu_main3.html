@@ -136,9 +136,7 @@
         }
 
 
-        a {
-            text-decoration: none;
-        }
+
 
         ul, li {
             padding: 0;
@@ -266,7 +264,7 @@
         }
         .split select{
             margin: 20px;
-            /*width: 160px;*/
+            width: 160px;
             /*height: 40px;*/
             /*margin: 40px 0 40px 40px;*/
             /*margin: 90px 0 0 40px;*/
@@ -362,7 +360,8 @@
             /*height: 676px;*/
             /*margin: 2px;*/
             /*float: left;*/
-            background: deepskyblue;
+            /*background: deepskyblue;*/
+            background: transparent;
             overflow: hidden;
             padding: 2px;
             /*margin: 0px;*/
@@ -373,7 +372,8 @@
             /*height: 336px;*/
             /*margin: 2px;*/
             /*float: left;*/
-            background: deepskyblue;
+            /*background: deepskyblue;*/
+            background: transparent;
             padding: 2px;
             /*margin: 1px;*/
             overflow: hidden;
@@ -432,53 +432,8 @@
             /*padding: 210px 150px;*/
 
         }
-
-        .pagination {
-            /*height: 40px;*/
-            /*margin: 20px 0;*/
-        }
-        .pagination ul {
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-
-        }
-        .pagination li {
-            /*display: inline;*/
-        }
-        .pagination a, .pagination span {
-            background-color: #FFFFFF;
-            border-color: #DDDDDD;
-        }
-        .pagination a:hover, .pagination .active a, .pagination .active span {
-            background-color: grey;
-        }
-
-        .pagination .active a, .pagination .active span {
-            color: white
-            /*cursor: default;*/
-        }
-        .pagination .disabled span, .pagination .disabled a, .pagination .disabled a:hover {
-            background-color: transparent;
-            color: #999999;
-            /*cursor: default;*/
-        }
-/*        .pagination li:first-child a, .pagination li:first-child span {
-            border-left-width: 1px;
-            border-radius: 3px 0 0 3px;
-        }
-        .pagination li:last-child a, .pagination li:last-child span {
-            border-radius: 0 3px 3px 0;
-        }
-        .pagination-centered {
-            text-align: center;
-        }
-        .pagination-right {
-            text-align: right;
-        }*/
-
-
-
-
     </style>
+    <link rel="stylesheet" href="../css/page_num.css">
 </head>
 <body >
     <!--<div class="hanfu_body center_1280" id="hanfu_body">-->
@@ -517,119 +472,130 @@
             <div id="banner5Img" class="row">
             <!--<div id="banner5Img" class="banner5Img row">-->
                 <div class="col-xs-5ths col-sm-5ths">
-                    <div class="can_hidden">
-                        <!--图片大小比例224x318 !!!-->
-                        <img src="../img/hanfu_banner1.jpg" alt="banner1" class="bannerImg img-responsive"  >
-                    </div>
-                    <p><a href="">曲裾</a></p>
+                    <a href="">
+                        <div class="can_hidden">
+                            <!--图片大小比例224x318 !!!-->
+                            <img src="../img/hanfu_banner1.jpg" alt="banner1" class="bannerImg img-responsive"  >
+                        </div>
+                        <p>曲裾</p>
+                    </a>
                 </div>
                 <div class="col-xs-5ths col-sm-5ths">
-                    <div class="can_hidden">
-                        <img src="../img/hanfu_banner2.jpg" alt="banner2" class="bannerImg img-responsive" >
-                    </div>
-                    <p><a href="">褙子</a></p>
+                    <a href="">
+                        <div class="can_hidden">
+                            <img src="../img/hanfu_banner2.jpg" alt="banner2" class="bannerImg img-responsive" >
+                        </div>
+                        <p>褙子</p>
+                    </a>
                 </div>
                 <div class="col-xs-5ths col-sm-5ths">
-                    <div class="can_hidden">
-                        <img src="../img/hanfu_banner3.jpg" alt="banner3" class="bannerImg img-responsive" >
-                    </div>
-                    <p><a href="">襦裙</a></p>
+                    <a href="">
+                        <div class="can_hidden">
+                            <img src="../img/hanfu_banner3.jpg" alt="banner3" class="bannerImg img-responsive" >
+                        </div>
+                        <p>襦裙</p>
+                    </a>
                 </div>
                 <div class="col-xs-5ths col-sm-5ths">
-                    <div class="can_hidden">
-                        <img src="../img/hanfu_banner4.jpg" alt="banner4" class="bannerImg img-responsive" >
-                    </div>
-                    <p><a href="">直裾</a></p>
+                    <a href="">
+                        <div class="can_hidden">
+                            <img src="../img/hanfu_banner4.jpg" alt="banner4" class="bannerImg img-responsive" >
+                        </div>
+                        <p>直裾</p>
+                    </a>
                 </div>
                 <div class="col-xs-5ths col-sm-5ths">
-                    <div class="can_hidden">
-                        <img src="../img/hanfu_banner5.jpg" alt="banner5" class="bannerImg img-responsive" >
-                    </div>
-                    <p><a href="">高腰襦裙</a></p>
+                    <a href="">
+                        <div class="can_hidden">
+                            <img src="../img/hanfu_banner5.jpg" alt="banner5" class="bannerImg img-responsive" >
+                        </div>
+                        <p>高腰襦裙</p>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="split row can_hidden">
             <div class="col-sm-3">
                 <select name="kind" id="">../
-                    <option value="">分类</option>
-                    <option value="">曲裾</option>
-                    <option value="">褙子</option>
-                    <option value="">襦裙</option>
-                    <option value="">直裾</option>
-                    <option value="">高腰襦裙</option>
+                    <option value="fenlei">分类</option>
+                    <option value="quju">曲裾</option>
+                    <option value="beizi">褙子</option>
+                    <option value="ruqun">襦裙</option>
+                    <option value="zhiju">直裾</option>
+                    <option value="gaoyaoruqun">高腰襦裙</option>
                 </select>
             </div>
 
         </div>
-        <div class="split_info row">
-            <div class="col-xs-12 col-sm-12">
-                <div class="row">
-                    <!--<div class="split_info_img_1 row">-->
-                    <div class="info_img_big col-xs-6 col-md-40ths col-sm-6 col-lg-40ths only_desc"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_big1.jpg" alt="钟灵记"><div id="zhonglingji" class="text_dec">钟灵记</div></a></div>
-                    <div class="col-sm-6 col-xs-6 col-sm-6 col-md-60ths col-lg-60ths">
-                        <div class="row">
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small11.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small12.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small13.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small14.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4 can_hidden"><a href=""><img class="img-responsive" src="../img/hanfu_info_small15.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4 can_hidden"><a href=""><img class="img-responsive" src="../img/hanfu_info_small16.jpg" alt="分类图片"></a></div>
+        <div class="split_info">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="row">
+                        <!--<div class="split_info_img_1 row">-->
+                        <div class="info_img_big col-xs-6 col-md-40ths col-sm-6 col-lg-40ths only_desc"><a href="hanfu_detail1.html"><img class="img-responsive" src="../img/hanfu_info_big1.jpg" alt="钟灵记"><div id="zhonglingji" class="text_dec">钟灵记</div></a></div>
+                        <div class="col-sm-6 col-xs-6 col-sm-6 col-md-60ths col-lg-60ths">
+                            <div class="row">
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small11.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small12.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small13.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small14.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4 can_hidden"><a href=""><img class="img-responsive" src="../img/hanfu_info_small15.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4 can_hidden"><a href=""><img class="img-responsive" src="../img/hanfu_info_small16.jpg" alt="分类图片"></a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-12">
-                <div class="row chg_show">
-                    <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href=""><img class="img-responsive" src="../img/hanfu_info_small15.jpg" alt="分类图片"></a></div>
-                    <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href=""><img class="img-responsive" src="../img/hanfu_info_small16.jpg" alt="分类图片"></a></div>
-                    <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href=""><img class="img-responsive" src="../img/hanfu_info_small22.jpg" alt="分类图片"></a></div>
-                    <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href=""><img class="img-responsive" src="../img/hanfu_info_small26.jpg" alt="分类图片"></a></div>
-                </div>
-            </div>
-
-
-                <!--</div>-->
-                <!--<div class="split_info_img_1">-->
-            <div class="col-xs-12 col-sm-12">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-60ths col-lg-60ths">
-                        <div class="row">
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small21.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4 can_hidden"><a href=""><img class="img-responsive" src="../img/hanfu_info_small22.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small23.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small24.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small25.jpg" alt="分类图片"></a></div>
-                            <div class="info_img_small col-xs-6 col-sm-6 col-md-4 can_hidden"><a href=""><img class="img-responsive" src="../img/hanfu_info_small26.jpg" alt="分类图片"></a></div>
-                        </div>
+                <div class="col-xs-12 col-sm-12">
+                    <div class="row chg_show">
+                        <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href=""><img class="img-responsive" src="../img/hanfu_info_small15.jpg" alt="分类图片"></a></div>
+                        <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href=""><img class="img-responsive" src="../img/hanfu_info_small16.jpg" alt="分类图片"></a></div>
+                        <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href=""><img class="img-responsive" src="../img/hanfu_info_small22.jpg" alt="分类图片"></a></div>
+                        <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href=""><img class="img-responsive" src="../img/hanfu_info_small26.jpg" alt="分类图片"></a></div>
                     </div>
-                    <div class="info_img_big col-xs-6 col-sm-6 col-md-40ths col-lg-40ths"><a href=""><img class="img-responsive" src="../img/hanfu_info_big2.jpg" alt="分类图片"></a></div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-12">
-                <div class="row">
-                    <nav style="text-align: center;">
-                        <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li class="active"><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
 
+
+                    <!--</div>-->
+                    <!--<div class="split_info_img_1">-->
+                <div class="col-xs-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-60ths col-lg-60ths">
+                            <div class="row">
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small21.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4 can_hidden"><a href=""><img class="img-responsive" src="../img/hanfu_info_small22.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small23.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small24.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4"><a href=""><img class="img-responsive" src="../img/hanfu_info_small25.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-6 col-sm-6 col-md-4 can_hidden"><a href=""><img class="img-responsive" src="../img/hanfu_info_small26.jpg" alt="分类图片"></a></div>
+                            </div>
+                        </div>
+                        <div class="info_img_big col-xs-6 col-sm-6 col-md-40ths col-lg-40ths"><a href=""><img class="img-responsive" src="../img/hanfu_info_big2.jpg" alt="分类图片"></a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <div class="row">
+                        <nav style="text-align: center;">
+                            <ul class="pagination pagination-lg">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="active"><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
             <!--</div>-->
 
@@ -759,6 +725,13 @@
 </body>
 <script src="../js/jquery-1.11.3.js"></script>
 <script>
+    //当select选中的值变化时
+    function whenSelectChange(){
+        console.log("当前select值: " + $("select").val());
+    }
+    $("select").change(function () {
+        whenSelectChange();
+    });
     function anyTimeDo(){
         $(".text_dec").css("line-height",$(".only_desc img").height()+"px");
         if ($(window).width() < 992){
