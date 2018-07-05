@@ -15,6 +15,7 @@
     <![endif]-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/huxike2.css">
+    <link rel="stylesheet" href="../css/public.css">
     <style type="text/css">
         .detail_text {
             font:24px  微软雅黑, serif;
@@ -82,11 +83,10 @@
         .goods_details {
             text-align: center;
         }
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 767px) {
             .detail_can_hidden {
                 display: none;
             }
-
             .detail_text {
                 font:20px  微软雅黑, serif;
                 color:#808080;
@@ -174,19 +174,68 @@
         .goods_details {
             text-align: center;
         }
+        .fixed_size {
+            width: 40px;
+            height: 60px;
+        }
     </style>
     <script src="../js/jquery-1.11.3.js"></script>
 </head>
 <body>
 <div class="container">
+    <div id="wel_and_login">
+        <span id="welcome">您好，欢迎光临</span>
+
+        <div id="log_reg">
+            <a href="#">登录</a>
+            <span>/</span>
+            <a href="#">注册</a>
+        </div>
+    </div>
+
+    <div id="public_logo">
+        <img class="img-responsive" src="../img/public_log.png">
+    </div>
+
+    <div id="nav_sty">
+        <div class="navbar navbar-default" id="header_nav">
+            <div class="navbar-header" id="nav_hea">
+                <a class="navbar-toggle" data-toggle="collapse" data-target="#nav_list" id="hea_a">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="nav_list">
+                <ul class="nav navbar-nav" id="nav_ul">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">西式婚纱</a></li>
+                    <li><a href="#">中式婚纱</a></li>
+                    <li><a href="#">晚礼服</a></li>
+                    <li><a href="#">汉服</a></li>
+                    <li><a href="#">私人订制</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!--<div class="hanfu_detail_body" >-->
     <div class="row" style="text-align: center">
-        <div class="col-lg-4 col-xs-12 col-sm-12 col-lg-offset-2 col-md-5 col-md-offset-1">
-            <div class="detail_picture row" style="text-align: center;">
+        <div class="col-lg-4 col-xs-12 col-sm-5 col-sm-offset-1  col-lg-offset-2 col-md-5 col-md-offset-1">
+            <div class="detail_picture" style="text-align: center;">
                 <img class="img-responsive" style="margin: auto" src="../img/hanfu_detail/hanfu_0.jpg" alt="该图片由于某种原因未能显示，请将此情况反映给客服，感谢您的支持与理解！">
             </div>
         </div>
-        <div class="col-lg-4 col-lg-offset-1 col-md-5 detail_can_hidden">
+        <!--小界面的按钮-->
+        <div class="visible-xs row">
+            <div class="col-xs-5 col-xs-offset-1"  style="padding-top: 20px;">
+                <div class="yuyue" ><span>预约试衣</span></div>
+            </div>
+            <div class="col-xs-5"  style="padding-top: 20px;">
+                <div class="consult"><span>点击咨询</span></div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-lg-offset-1 col-sm-5 col-md-5 detail_can_hidden">
             <div class="detail_text">
                 <p class="text_title" style="margin-bottom: 0;">钟灵记【小乔】</p>
                 <img src="../img/lines_1.png">
@@ -208,15 +257,15 @@
         </div>
     </div>
     <!--缩略图-->
-    <div class="hidden-xs row " id="imgDefault1">
-        <div class=" col-sm-1 col-sm-offset-2 litter-pic"><img class="imgItem1" data-src="../img2/hxk_xq_0.png"
-                                                               src="../img2/hxk_xq_00.jpg"></div>
-        <div class="col-sm-1 litter-pic"><img class="imgItem1" data-src="../img2/hxk_xq_1.png"
-                                              src="../img2/hxk_xq_10.jpg"></div>
-        <div class="col-sm-1 litter-pic"><img class="imgItem1" data-src="../img2/hxk_xq_2.png"
-                                              src="../img2/hxk_xq_20.jpg"></div>
-        <div class="col-sm-1 litter-pic"><img class="imgItem1" data-src="../img2/hxk_xq_3.png"
-                                              src="../img2/hxk_xq_30.jpg"></div>
+    <div class="hidden-xs row detail_can_hidden" id="imgDefault1">
+        <div class=" col-sm-1 col-sm-offset-2 litter-pic"><img class="imgItem1" data-src="../img/hanfu_detail/hanfu_detail_1.jpg"
+                                                               src="../img/hanfu_detail/hanfu_thumbnail_1.jpg"></div>
+        <div class="col-sm-1 litter-pic"><img class="imgItem1" data-src="../img/hanfu_detail/hanfu_detail_4000.jpg"
+                                              src="../img/hanfu_detail/hanfu_thumbnail_2.jpg"></div>
+        <div class="col-sm-1 litter-pic"><img class="imgItem1" data-src="../img/hanfu_detail/hanfu_detail_6_2.jpg"
+                                              src="../img/hanfu_detail/hanfu_thumbnail_3.jpg"></div>
+        <div class="col-sm-1 litter-pic"><img class="imgItem1" data-src="../img/hanfu_detail/hanfu_detail_7.jpg"
+                                              src="../img/hanfu_detail/hanfu_thumbnail_4.jpg"></div>
     </div>
         <!-- 返回和返回顶部按钮-->
 <!--        <div class="top_and_back" id="top_and_back">
@@ -231,7 +280,7 @@
     <div class="row">
         <div class="col-xs-12 detail_title">
             <p class="show_text">商品展示</p>
-            <img src="../img/lines_2.png">
+            <img class="img-responsive" src="../img/lines_2.png">
         </div>
 
             <div class="goods_details col-xs-12">
@@ -319,6 +368,29 @@
                 </div>
             </div>
     </div>
+    <!-- 尾部-->
+    <div class="public_footer">
+        <div class="split_line"></div>
+        <div id="pub_er">
+            <img src="../img/public_erweima.png">
+        </div>
+        <nav>
+            <ul id="fot_nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">西式婚纱</a></li>
+                <li><a href="#">中式婚纱</a></li>
+                <li><a href="#">晚礼服</a></li>
+                <li><a href="#">汉服</a></li>
+                <li><a href="#">私人订制</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </nav>
+        <div class="address_copyright">
+            中国·上海·杨浦区·宝源路F518时尚创意园13栋汇所<br>
+            Copyright©2018 ly<br>
+            <span class="phone">咨询热线：400-101-8123</span>
+        </div>
+    </div>
     <div class="suspension">
         <div class="suspension-box">
 
@@ -363,10 +435,78 @@
         <!--</div>-->
     <!--</div>-->
 </div>
-
+</div>
 </body>
 <script src="../js/bootstrap.js"></script>
 <script src="../js/huxike2.js"></script>
+
+<script type="text/javascript">
+    function whenResize(){
+        $(".detail_text").height($(".detail_picture").height());
+        if($(window).width() >= 1200){
+            $(".goods_details img").css("margin","50px auto");
+        }else if ($(window).width() >= 992){
+            $(".goods_details img").css("margin","40px auto");
+        }else {
+            $(".goods_details img").css("margin","20px auto");
+        }
+
+    }
+    $(document).ready(function () {
+        /* -&#45;&#45;&#45;&#45; 侧边悬浮 &#45;&#45;&#45;&#45; */
+        $(document).on("mouseenter", ".suspension .a", function(){
+            var _this = $(this);
+            var s = $(".suspension");
+            var isService = _this.hasClass("a-service");
+            var isServicePhone = _this.hasClass("a-service-phone");
+            var isQrcode = _this.hasClass("a-qrcode");
+            if(isService){ s.find(".d-service").show().siblings(".d").hide();}
+            if(isServicePhone){ s.find(".d-service-phone").show().siblings(".d").hide();}
+            if(isQrcode){ s.find(".d-qrcode").show().siblings(".d").hide();}
+        });
+        $(document).on("mouseleave", ".suspension, .suspension .a-top", function(){
+            $(".suspension").find(".d").hide();
+        });
+        $(document).on("mouseenter", ".suspension .a-top", function(){
+            $(".suspension").find(".d").hide();
+        });
+        $(document).on("click", ".suspension .a-top", function(){
+            $("html,body").animate({scrollTop: 0});
+        });
+        $(window).scroll(function(){
+            var st = $(document).scrollTop();
+            var $top = $(".suspension .a-top");
+            if(st > 400){
+                $top.css({display: 'block'});
+            }else{
+                if ($top.is(":visible")) {
+                    $top.hide();
+                }
+            }
+        });
+
+        whenResize();
+        $(".goods_details img").addClass("img-responsive");
+        // $("imgItem1").removeClass("img-responsive")
+        $(".goods_details div>div").addClass("col-xs-12");
+        $(".goods_details div>div").css("text-align","center");
+    });
+/*    $(window).load(function () {
+        /!*whenResize();
+        $("img").addClass("img-responsive");
+        $(".goods_details div>div").addClass("col-xs-12");
+        $(".goods_details div>div").css("text-align","center");*!/
+        // $(".goods_details  div").addClass("col-xs-12");
+        /!*&#45;&#45;&#45;&#45;&#45;&#45; 图文居中 -&#45;&#45;&#45;&#45;*!/
+            // $(".goods_details").css("text-align","center");
+            // $(".goods_details img").css("margin","50px");
+
+    });*/
+    $(window).resize(function () {
+        whenResize();
+        // $(".detail_text").height($(".detail_picture").height());
+    });
+</script>
 <script>
     (function () {
         var LightBox = function (options) {
@@ -393,7 +533,7 @@
             oHtml += '<div class="mask"></div>';
             oHtml += '<div class="lightBox">';
             oHtml += '<div class="lightBoxContent">';
-            oHtml += '<img src="../img2/loading.gif" alt="" id="imgLoader">';
+            oHtml += '<img src="../img/loading.gif" alt="" id="imgLoader">';
             oHtml += '<img alt="" id="imgLight">';
             oHtml += '</div>';
             oHtml += '<span class="btn lightBoxSprite" id="lightBoxPrev"></span>';
@@ -473,7 +613,7 @@
                 if (self.idx >= imgList.length) {
                     self.idx = 0;
                 }
-
+                console.log(imgList);
                 var src = imgList[self.idx].getAttribute("data-src");
                 self.imgLoad(src);
                 self.pagination(self.idx);
@@ -521,71 +661,6 @@
         imgListParent: "imgDefault1",
         imgItemClass: "imgItem1",
         isShowPage: true
-    });
-</script>
-<script type="text/javascript">
-    function whenResize(){
-        if($(window).width() >= 1200){
-            $(".goods_details img").css("margin","50px auto");
-        }else if ($(window).width() >= 992){
-            $(".goods_details img").css("margin","40px auto");
-        }else {
-            $(".goods_details img").css("margin","20px auto");
-        }
-
-    }
-    $(document).ready(function () {
-        /* ----- 侧边悬浮 ---- */
-        $(document).on("mouseenter", ".suspension .a", function(){
-            var _this = $(this);
-            var s = $(".suspension");
-            var isService = _this.hasClass("a-service");
-            var isServicePhone = _this.hasClass("a-service-phone");
-            var isQrcode = _this.hasClass("a-qrcode");
-            if(isService){ s.find(".d-service").show().siblings(".d").hide();}
-            if(isServicePhone){ s.find(".d-service-phone").show().siblings(".d").hide();}
-            if(isQrcode){ s.find(".d-qrcode").show().siblings(".d").hide();}
-        });
-        $(document).on("mouseleave", ".suspension, .suspension .a-top", function(){
-            $(".suspension").find(".d").hide();
-        });
-        $(document).on("mouseenter", ".suspension .a-top", function(){
-            $(".suspension").find(".d").hide();
-        });
-        $(document).on("click", ".suspension .a-top", function(){
-            $("html,body").animate({scrollTop: 0});
-        });
-        $(window).scroll(function(){
-            var st = $(document).scrollTop();
-            var $top = $(".suspension .a-top");
-            if(st > 400){
-                $top.css({display: 'block'});
-            }else{
-                if ($top.is(":visible")) {
-                    $top.hide();
-                }
-            }
-        });
-
-        whenResize();
-        $("img").addClass("img-responsive");
-        $(".goods_details div>div").addClass("col-xs-12");
-        $(".goods_details div>div").css("text-align","center");
-    });
-/*    $(window).load(function () {
-        /!*whenResize();
-        $("img").addClass("img-responsive");
-        $(".goods_details div>div").addClass("col-xs-12");
-        $(".goods_details div>div").css("text-align","center");*!/
-        // $(".goods_details  div").addClass("col-xs-12");
-        /!*------ 图文居中 -----*!/
-            // $(".goods_details").css("text-align","center");
-            // $(".goods_details img").css("margin","50px");
-
-    });*/
-    $(window).resize(function () {
-        whenResize();
-        // $(".detail_text").height($(".detail_picture").height());
     });
 </script>
 </html>
