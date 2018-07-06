@@ -2,153 +2,239 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>汉服</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../css/page_num.css">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/hanfu.css">
 </head>
 <body >
-    <div class="hanfu_body center_1280" id="hanfu_body">
-        <!--顶部-->
-        <div class="public_header" align="center">
-            <div class="wel_and_login">
-                <span class="welcome">您好，欢迎光临</span>
-                <div class="login_register">
-                    <a  href="#"> 登录</a><span>/</span>
-                    <a  href="#">注册</a>
+    <div class="container">
+        <div id="wel_and_login">
+            <span id="welcome">您好，欢迎光临</span>
+
+            <div id="log_reg">
+                <a href="#">登录</a>
+                <span>/</span>
+                <a href="#">注册</a>
+            </div>
+        </div>
+
+        <div id="public_logo">
+            <img class="img-responsive" src="../img/public_log.png">
+        </div>
+
+        <div id="nav_sty">
+            <div class="navbar navbar-default" id="header_nav">
+                <div class="navbar-header" id="nav_hea">
+                    <a class="navbar-toggle" data-toggle="collapse" data-target="#nav_list" id="hea_a">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse" id="nav_list">
+                    <ul class="nav navbar-nav" id="nav_ul">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">西式婚纱</a></li>
+                        <li><a href="#">中式婚纱</a></li>
+                        <li><a href="#">晚礼服</a></li>
+                        <li><a href="#">汉服</a></li>
+                        <li><a href="#">私人订制</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class ="public_logo">
-                <img src="../img/public_log.png">
-            </div>
-            <nav>
-                <ul class="navigator" >
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">西式婚纱</a></li>
-                    <li><a href="#">中式婚纱</a></li>
-                    <li><a href="#">晚礼服</a></li>
-                    <li><a href="#">汉服</a></li>
-                    <li><a href="#">私人订制</a></li>
-                    <li><a href="#">关于我们</a></li>
-                </ul>
-            </nav>
         </div>
-        <div class="banners">
-            <div class="hun_ban"></div>
-        </div>
-        <div id="top_banner" class="top_banner">
-            <div class="titleText">
+        <div class="container">
+        <div id="top_banner" class="top_banner row container">
+            <div class="titleText col-xs-12 col-sm-12 col-md-12">
                 汉服 HANFU
             </div>
-            <div id="banner5Img" class="banner5Img margin-left-30">
-                <div class="top_bannerImgDiv">
-                    <!--图片大小比例224x318 !!!-->
-                    <img src="../img/hanfu_banner1.jpg" alt="banner1" class="bannerImg" >
+            <div id="banner5Img" class="row">
+            <!--<div id="banner5Img" class="banner5Img row">-->
+                <div class="col-xs-12 col-sm-5ths">
+                    <a href="">
+                        <div class="chg_xs_banner">
+                            <!--图片大小比例224x318 !!!-->
+                            <img src="../img/hanfu_banner1.jpg" alt="banner1" class="bannerImg img-responsive"  >
+                        </div>
+                        <p>曲裾</p>
+                    </a>
                 </div>
-                <div class="top_bannerImgDiv">
-                    <img src="../img/hanfu_banner2.jpg" alt="banner2" class="bannerImg" >
+                <div class="col-xs-12 col-sm-5ths">
+                    <a href="">
+                        <div class="chg_xs_banner">
+                            <img src="../img/hanfu_banner2.jpg" alt="banner2" class="bannerImg img-responsive" >
+                        </div>
+                        <p>褙子</p>
+                    </a>
                 </div>
-                <div class="top_bannerImgDiv">
-                    <img src="../img/hanfu_banner3.jpg" alt="banner3" class="bannerImg" >
+                <div class="col-xs-12 col-sm-5ths">
+                    <a href="">
+                        <div class="chg_xs_banner">
+                            <img src="../img/hanfu_banner3.jpg" alt="banner3" class="bannerImg img-responsive" >
+                        </div>
+                        <p>襦裙</p>
+                    </a>
                 </div>
-                <div class="top_bannerImgDiv">
-                    <img src="../img/hanfu_banner4.jpg" alt="banner4" class="bannerImg" >
+                <div class="col-xs-12 col-sm-5ths">
+                    <a href="">
+                        <div class="chg_xs_banner">
+                            <img src="../img/hanfu_banner4.jpg" alt="banner4" class="bannerImg img-responsive" >
+                        </div>
+                        <p>直裾</p>
+                    </a>
                 </div>
-                <div class="top_bannerImgDiv">
-                    <img src="../img/hanfu_banner5.jpg" alt="banner5" class="bannerImg" >
+                <div class="col-xs-12 col-sm-5ths">
+                    <a href="">
+                        <div class="chg_xs_banner">
+                            <img src="../img/hanfu_banner5.jpg" alt="banner5" class="bannerImg img-responsive" >
+                        </div>
+                        <p>高腰襦裙</p>
+                    </a>
                 </div>
-            </div>
-            <br>
-            <div class="small_title">
-                <ul>
-                    <li><a href="">曲裾</a></li>
-                    <li><a href="">褙子</a></li>
-                    <li><a href="">襦裙</a></li>
-                    <li><a href="">直裾</a></li>
-                    <li><a href="">高腰襦裙</a></li>
-                </ul>
             </div>
         </div>
-        <div class="split">
-            <select name="kind" id="">../
-                <option value="">分类</option>
-                <option value="">曲裾</option>
-                <option value="">褙子</option>
-                <option value="">襦裙</option>
-                <option value="">直裾</option>
-                <option value="">高腰襦裙</option>
-            </select>
+        <div class="split row">
+            <div class="col-xs-12 col-sm-3" style="text-align: center;">
+                <select name="kind" id="">../
+                    <option value="fenlei">分类</option>
+                    <option value="quju">曲裾</option>
+                    <option value="beizi">褙子</option>
+                    <option value="ruqun">襦裙</option>
+                    <option value="zhiju">直裾</option>
+                    <option value="gaoyaoruqun">高腰襦裙</option>
+                </select>
+            </div>
         </div>
         <div class="split_info">
-            <div class="split_info_img">
-                <div class="split_info_img_1">
-                    <a href="hanfu_detail.html"><div class="info_img_big"><img class="bannerImg" src="../img/hanfu_info_big1.jpg" alt="钟灵记"><div class="text_dec">钟灵记</div></div></a>
-                    <a href=""><div class="info_img_small"><img class="bannerImg" src="../img/hanfu_info_small11.jpg" alt="分类图片"></div></a>
-                    <a href=""><div class="info_img_small"><img class="bannerImg" src="../img/hanfu_info_small12.jpg" alt="分类图片"></div></a>
-                    <a href=""><div class="info_img_small"><img class="bannerImg" src="../img/hanfu_info_small13.jpg" alt="分类图片"></div></a>
-                    <a href=""><div class="info_img_small"><img class="bannerImg" src="../img/hanfu_info_small14.jpg" alt="分类图片"></div></a>
-                    <a href=""><div class="info_img_small"><img class="bannerImg" src="../img/hanfu_info_small15.jpg" alt="分类图片"></div></a>
-                    <a href=""><div class="info_img_small"><img class="bannerImg" src="../img/hanfu_info_small16.jpg" alt="分类图片"></div></a>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="row">
+                        <!--<div class="split_info_img_1 row">-->
+                        <div class="info_img_big col-xs-12 col-md-40ths col-sm-6 col-lg-40ths only_desc"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_big1.jpg" alt="钟灵记"><div id="zhonglingji" class="text_dec">钟灵记</div></a></div>
+                        <div class="col-sm-6 col-xs-12 col-sm-6 col-md-60ths col-lg-60ths">
+                            <div class="row">
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small11.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small12.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small13.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small14.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4 can_hidden"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small15.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4 can_hidden"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small16.jpg" alt="分类图片"></a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="split_info_img_1">
-                    <a href=""> <div class="info_img_big right"><img class="bannerImg" src="../img/hanfu_info_big2.jpg" alt="分类图片"></div></a>
-                    <a href=""> <div class="info_img_small right"><img class="bannerImg" src="../img/hanfu_info_small23.jpg" alt="分类图片"></div></a>
-                    <a href=""> <div class="info_img_small right"><img class="bannerImg" src="../img/hanfu_info_small22.jpg" alt="分类图片"></div></a>
-                    <a href=""> <div class="info_img_small right"><img class="bannerImg" src="../img/hanfu_info_small21.jpg" alt="分类图片"></div></a>
-                    <a href=""> <div class="info_img_small right"><img class="bannerImg" src="../img/hanfu_info_small26.jpg" alt="分类图片"></div></a>
-                    <a href=""> <div class="info_img_small right"><img class="bannerImg" src="../img/hanfu_info_small25.jpg" alt="分类图片"></div></a>
-                    <a href=""> <div class="info_img_small right"><img class="bannerImg" src="../img/hanfu_info_small24.jpg" alt="分类图片"></div></a>
+                <div class="col-xs-12 col-sm-12 chg_show">
+                    <div class="row chg_show">
+                        <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small15.jpg" alt="分类图片"></a></div>
+                        <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small16.jpg" alt="分类图片"></a></div>
+                        <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small22.jpg" alt="分类图片"></a></div>
+                        <div class="info_img_small col-xs-3 col-sm-3 col-md-3"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small26.jpg" alt="分类图片"></a></div>
+                    </div>
                 </div>
 
-            </div>
-            <div class="split_info_page">
-                <ul>
-                    <li class="pre_page">
-                        <a href="">
-                            <div class="change_page">
-                                上一页
+
+                    <!--</div>-->
+                    <!--<div class="split_info_img_1">-->
+                <div class="col-xs-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-60ths col-lg-60ths">
+                            <div class="row">
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small21.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4 can_hidden"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small22.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small23.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small24.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small25.jpg" alt="分类图片"></a></div>
+                                <div class="info_img_small col-xs-12 col-sm-6 col-md-4 can_hidden"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_small26.jpg" alt="分类图片"></a></div>
                             </div>
-                        </a>
-                    </li>
-                    <li class="page_num"><a href="">1</a></li>
-                    <li class="page_num"><a href="">2</a></li>
-                    <li class="page_num"><a href="">3</a></li>
-                    <li class="page_num selected_page"><a href="">4</a></li>
-                    <li class="page_num"><a href="">5</a></li>
-                    <li class="page_num"><a href="">6</a></li>
-                    <li class="page_num"><a href="">7</a></li>
-                    <li class="next_page">
-                        <a href="">
-                            <div class="change_page">
-                                下一页
-                            </div>
-                        </a></li>
-                </ul>
+                        </div>
+                        <div class="info_img_big col-xs-12 col-sm-6 col-md-40ths col-lg-40ths"><a href="hanfu_detail.html"><img class="img-responsive" src="../img/hanfu_info_big2.jpg" alt="分类图片"></a></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <div class="row">
+                        <nav style="text-align: center;">
+                            <ul class="pagination pagination-lg">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li class="active"><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="shipin_banner">
-            <div class="titleText2">
+        <div class="shipin_banner row">
+            <div class="titleText2 col-md-12 ">
                 配饰 <span style="color: #d7d4d7;">ACCESSORIES</span>
             </div>
-            <div id="banner5Img2" class="banner5Img margin-left-30">
-                <div class="shipin_bannerImgDiv">
-                    <!--图片大小比例240x340 !!!-->
-                    <img src="../img/hanfu_shipin_banner1.jpg" alt="banner1" class="bannerImg" >
+            <!--<div id="banner5Img2" class="shipin_small_title banner5Img margin-left-30">-->
+                <div class="col-lg-5ths col-md-5ths col-sm-5ths col-xs-12">
+                    <a href="">
+                        <div class="">
+                            <!--图片大小比例240x340 !!!-->
+                            <img src="../img/hanfu_shipin_banner1.jpg" alt="banner1" class="img-responsive" >
+                        </div>
+                        荷包
+                    </a>
                 </div>
-                <div class="shipin_bannerImgDiv">
-                    <img src="../img/hanfu_shipin_banner2.jpg" alt="banner2" class="bannerImg" >
+                <div class="col-lg-5ths col-md-5ths col-sm-5ths col-xs-12">
+                    <a href="">
+                        <div class="">
+                            <img src="../img/hanfu_shipin_banner2.jpg" alt="banner2" class="img-responsive" >
+                        </div>
+                        宫绦
+                    </a>
                 </div>
-                <div class="shipin_bannerImgDiv">
-                    <img src="../img/hanfu_shipin_banner3.jpg" alt="banner3" class="bannerImg" >
+                <div class="col-lg-5ths col-md-5ths col-sm-5ths col-xs-12">
+                    <a href="">
+                        <div class="">
+                            <img src="../img/hanfu_shipin_banner3.jpg" alt="banner3" class="img-responsive" >
+                        </div>
+                        璎珞
+                    </a>
                 </div>
-                <div class="shipin_bannerImgDiv">
-                    <img src="../img/hanfu_shipin_banner4.jpg" alt="banner4" class="bannerImg" >
+                <div class="col-lg-5ths col-md-5ths col-sm-5ths col-xs-12">
+                    <a href="">
+                        <div class="">
+                            <img src="../img/hanfu_shipin_banner4.jpg" alt="banner4" class="img-responsive" >
+                        </div>
+                        发簪
+                    </a>
                 </div>
-                <div class="shipin_bannerImgDiv">
-                    <img src="../img/hanfu_shipin_banner5.jpg" alt="banner5" class="bannerImg" >
+                <div class="col-lg-5ths col-md-5ths col-sm-5ths col-xs-12">
+                    <a href="">
+                        <div class="">
+                            <img src="../img/hanfu_shipin_banner5.jpg" alt="banner5" class="img-responsive" >
+                        </div>
+                        玉扣
+                    </a>
                 </div>
-            </div>
-            <br>
-            <div class="shipin_small_title">
+            <!--</div>-->
+            <!--<br>-->
+            <!--<div class="shipin_small_title">
                 <ul>
                     <li><a href="">荷包</a></li>
                     <li><a href="">宫绦</a></li>
@@ -156,14 +242,17 @@
                     <li><a href="">发簪</a></li>
                     <li><a href="">玉扣</a></li>
                 </ul>
-            </div>
+            </div>-->
         </div>
+        </div> <!--container-->
         <!-- 尾部-->
-        <div class="public_footer" align="center">
+        <div class="public_footer">
             <div class="split_line"></div>
-            <img src="../img/public_erweima.png">
+            <div id="pub_er">
+                <img src="../img/public_erweima.png">
+            </div>
             <nav>
-                <ul class="navigator" >
+                <ul id="fot_nav">
                     <li><a href="#">首页</a></li>
                     <li><a href="#">西式婚纱</a></li>
                     <li><a href="#">中式婚纱</a></li>
@@ -179,8 +268,57 @@
                 <span class="phone">咨询热线：400-101-8123</span>
             </div>
         </div>
-
     </div>
 
+
 </body>
+<script src="../js/jquery-1.11.3.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.js"></script>
+<script>
+    //当select选中的值变化时
+    function whenSelectChange(){
+        console.log("当前select值: " + $("select").val());
+    }
+    $("select").change(function () {
+        whenSelectChange();
+    });
+    function anyTimeDo(){
+
+        if($(window).width() >= 1200){
+            $(".chg_show").css("display","none");
+        }else if($(window).width() >= 992){
+            $(".chg_show").css("display","none");
+        }else if($(window).width() >= 768){
+            $(".chg_show").css("display","block");
+            // $(".can_hidden").css("display","none")
+        }else if($(window).width() >= 500){
+            $(".chg_show").css("display","none");
+            // $(".can_hidden").css("display","block");
+        }else {
+            $(".chg_show").css("display","none");
+            $(".titleText2").css("font-size","20px");
+        }
+        if($(window).width() < 768){
+            $(".text_dec").css("font-size","30px");
+        }else{
+            $(".text_dec").css("font-size","60px");
+        }
+        $(".text_dec").css("line-height",$(".only_desc img").height()+"px");
+/*        if ($(window).width() < 992 && $(window).width()>= 768){
+            // $(".chg_show").html("");
+            // $(".chg_show").prepend($(".can_hidden_up"));
+            // $(".chg_show").prepend($(".can_hidden_down"));
+            $(".chg_show").css("display","block");
+        }else{
+            $(".chg_show").css("display","none");
+        }*/
+    }
+    $(window).load(function () {
+        anyTimeDo();
+    });
+    $(window).resize(function () {
+       anyTimeDo();
+    });
+</script>
 </html>
